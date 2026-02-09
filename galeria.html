@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Tours en Tingo María</title>
+    <link rel="preload" href="mi-fuente.woff2" as="font" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="#index.html" class="logo">🌿 Tingo María Tours</a>
+          <nav class="nav">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="sobre.html" class="nav-link">Sobre mí</a>
+            <a href="tours.html" class="nav-link">Tours</a>
+            <a href="galeria.html" class="nav-link active">Galería</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Galería Principal -->
+    <section class="section">
+      <div class="container">
+        <h2>Galería de Aventuras</h2>
+        <p>Mira las increíbles experiencias que vivirás en nuestros tours por Tingo María</p>
+        <!-- Carousel Principal -->
+        <div class="carousel-container">
+          <div class="carousel" id="mainCarousel">
+            <img src="https://images.unsplash.com/photo-1544552866-d3ed42536cfd?w=800&h=400&fit=crop" alt="Cueva de las Lechuzas">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop" alt="La Bella Durmiente">
+            <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=400&fit=crop" alt="Catarata Santa Carmen">
+            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800&h=400&fit=crop" alt="Safari Nocturno">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=400&fit=crop" alt="Senderos amazónicos">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=400&fit=crop" alt="Paisajes naturales">
+          </div>
+          <button class="carousel-nav carousel-prev" onclick="changeSlide(-1)">❮</button>
+          <button class="carousel-nav carousel-next" onclick="changeSlide(1)">❯</button>
+          <div class="carousel-indicators">
+            <span class="indicator active" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+            <span class="indicator" onclick="currentSlide(3)"></span>
+            <span class="indicator" onclick="currentSlide(4)"></span>
+            <span class="indicator" onclick="currentSlide(5)"></span>
+            <span class="indicator" onclick="currentSlide(6)"></span>
+          </div>
+        </div>
+        <!-- Galerías por Destino -->
+        <div style="margin-top: 4rem;">
+          <h3 style="color: var(--primary); text-align: center; margin-bottom: 3rem; font-size: 1.8rem;">Explora por Destino</h3>
+          <!-- Cueva de las Lechuzas -->
+          <div class="gallery-section">
+            <h4>🦇 Cueva de las Lechuzas</h4>
+            <div class="gallery-grid">
+              <img src="https://images.unsplash.com/photo-1544552866-d3ed42536cfd?w=250&h=150&fit=crop" alt="Entrada cueva" onclick="openModal(this.src, 'Entrada misteriosa a la Cueva de las Lechuzas')">
+              <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=250&h=150&fit=crop" alt="Interior cueva" onclick="openModal(this.src, 'Interior iluminado con estalactitas')">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=250&h=150&fit=crop" alt="Guácharos" onclick="openModal(this.src, 'Observando los guácharos en su hábitat')">
+            </div>
+          </div>
+          <!-- La Bella Durmiente -->
+          <div class="gallery-section">
+            <h4>🏔️ La Bella Durmiente</h4>
+            <div class="gallery-grid">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=250&h=150&fit=crop" alt="Vista panorámica" onclick="openModal(this.src, 'Vista panorámica de La Bella Durmiente')">
+              <img src="https://images.unsplash.com/photo-1464822759844-d150ad6c2d69?w=250&h=150&fit=crop" alt="Sendero montaña" onclick="openModal(this.src, 'Sendero hacia la cima')">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=250&h=150&fit=crop" alt="Atardecer" onclick="openModal(this.src, 'Atardecer dorado desde la montaña')">
+            </div>
+          </div>
+          <!-- Cataratas -->
+          <div class="gallery-section">
+            <h4>💧 Cataratas y Ríos</h4>
+            <div class="gallery-grid">
+              <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=250&h=150&fit=crop" alt="Catarata principal" onclick="openModal(this.src, 'Catarata de Santa Carmen')">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=250&h=150&fit=crop" alt="Pozas naturales" onclick="openModal(this.src, 'Pozas naturales refrescantes')">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=250&h=150&fit=crop" alt="Vegetación" onclick="openModal(this.src, 'Vegetación exuberante')">
+            </div>
+          </div>
+          <!-- Vida Silvestre -->
+          <div class="gallery-section">
+            <h4>🦎 Vida Silvestre</h4>
+            <div class="gallery-grid">
+              <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=250&h=150&fit=crop" alt="Aves tropicales" onclick="openModal(this.src, 'Aves tropicales en su hábitat')">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=250&h=150&fit=crop" alt="Mariposas" onclick="openModal(this.src, 'Mariposas amazónicas')">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=250&h=150&fit=crop" alt="Flora" onclick="openModal(this.src, 'Flora amazónica exuberante')">
+            </div>
+          </div>
+        </div>
+        <!-- Testimonios -->
+        <div class="testimonials">
+          <h3>Lo que dicen nuestros visitantes</h3>
+          <div class="testimonial-grid">
+            <div class="testimonial">
+              <img src="https://images.unsplash.com/photo-1494790108755-2616c20e8c8a?w=80&h=80&fit=crop&crop=face" alt="María">
+              <p style="font-style: italic; margin-bottom: 10px;">"Una experiencia increíble. El guía conoce cada historia del lugar."</p>
+              <p style="font-weight: bold;">- María, España</p>
+            </div>
+            <div class="testimonial">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Carlos">
+              <p style="font-style: italic; margin-bottom: 10px;">"Totalmente recomendado. Profesional y muy amable."</p>
+              <p style="font-weight: bold;">- Carlos, Lima</p>
+            </div>
+            <div class="testimonial">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face" alt="Ana">
+              <p style="font-style: italic; margin-bottom: 10px;">"Los mejores recuerdos de nuestro viaje al Perú."</p>
+              <p style="font-weight: bold;">- Ana, Argentina</p>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+          <h3 style="color: var(--primary); margin-bottom: 1.5rem;">¿Listo para crear tus propios recuerdos?</h3>
+          <a href="contacto.html" class="btn" style="font-size: 1.1rem; padding: 1rem 2rem;">Reserva tu Tour</a>
+        </div>
+      </div>
+    </section>
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modalImage">
+      <div id="modalCaption" class="caption"></div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>🌿 Tingo María Tours</h3>
+            <p>Tu guía personal para descubrir la magia de la Amazonía peruana. Experiencias auténticas en el corazón de la selva.</p>
+            <div style="margin-top: var(--space-4);">
+              <p><strong>📍 Ubicación:</strong>
+                Tingo María, Huánuco</p>
+              <p><strong>🕐 Horario:</strong>
+                24/7 disponible</p>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>🗺️ Servicios</h3>
+            <div class="flex" style="flex-direction: column; gap: var(--space-2);">
+              <a href="tours.html">🌊 Tours de Aventura</a>
+              <a href="galeria.html">📸 Galería de Momentos</a>
+              <a href="sobre.html">👨‍🏫 Conoce a tu Guía</a>
+              <a href="contacto.html">📞 Reserva tu Tour</a>
+              <a href="#testimonios">⭐ Testimonios</a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>📱 Conecta Conmigo</h3>
+            <p style="margin-bottom: var(--space-4); font-size: 0.9rem;">¡Sígueme para ver las últimas aventuras!</p>
+            <div class="flex" style="flex-direction: column; gap: var(--space-2);">
+              <a href="#" class="btn btn-small">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                Facebook
+              </a>
+              <a href="#" class="btn btn-small">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                </svg>
+                WhatsApp
+              </a>
+              <a href="#" class="btn btn-small">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.846L12 10.855l9.518-7.035h.846c.904 0 1.636.732 1.636 1.636z"/>
+                </svg>
+                Gmail
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+            <p>&copy; 2025 Tingo María Tours | Todos los derechos reservados</p>
+            <p style="font-size: 0.875rem;">🌱 Turismo responsable y sostenible. Creando memorias inolvidables en la selva amazónica del Perú</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      let currentSlideIndex = 0;
+    const slides = document.querySelectorAll('#mainCarousel img');
+    const indicators = document.querySelectorAll('.indicator');
+    const totalSlides = slides.length;
+
+    function changeSlide(direction) {
+      currentSlideIndex += direction;
+      if (currentSlideIndex >= totalSlides) currentSlideIndex = 0;
+      else if (currentSlideIndex < 0) currentSlideIndex = totalSlides - 1;
+      updateCarousel();
+    }
+
+    function currentSlide(n) {
+      currentSlideIndex = n - 1;
+      updateCarousel();
+    }
+
+    function updateCarousel() {
+      document.getElementById('mainCarousel').style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+      indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === currentSlideIndex);
+      });
+    }
+
+    function openModal(src, caption) {
+      document.getElementById('imageModal').style.display = 'block';
+      document.getElementById('modalImage').src = src;
+      document.getElementById('modalCaption').textContent = caption;
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('imageModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Auto-play carousel
+    setInterval(() => changeSlide(1), 4000);
+
+    // Close modal with ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    // Close modal clicking outside
+    document.getElementById('imageModal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+    </script>
+    <script>
+      // Intersection Observer para animaciones
+          const observerOptions = {
+              threshold: 0.1,
+              rootMargin: '0px 0px -50px 0px'
+          };
+  
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      entry.target.classList.add('in-view');
+                  }
+              });
+          }, observerOptions);
+  
+          // Observar secciones
+          document.querySelectorAll('.section').forEach(section => {
+              observer.observe(section);
+          });
+  
+          // Header scroll effect
+          window.addEventListener('scroll', () => {
+              const header = document.querySelector('.header');
+              if (window.scrollY > 100) {
+                  header.classList.add('scrolled');
+              } else {
+                  header.classList.remove('scrolled');
+              }
+          });
+  
+          // Mobile menu toggle
+          const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+          const nav = document.querySelector('.nav');
+  
+          mobileMenuBtn.addEventListener('click', () => {
+              nav.classList.toggle('mobile-active');
+          });
+  
+  
+  
+          // Añadir efectos de carga progresiva
+          window.addEventListener('load', () => {
+              document.body.style.opacity = '1';
+          });
+  
+          // Efecto de partículas en el fondo (opcional)
+          function createFloatingElements() {
+              const container = document.querySelector('.section');
+              for (let i = 0; i < 5; i++) {
+                  const element = document.createElement('div');
+                  element.style.cssText = `
+                      position: absolute;
+                      width: ${Math.random() * 10 + 5}px;
+                      height: ${Math.random() * 10 + 5}px;
+                      background: rgba(76, 175, 80, 0.1);
+                      border-radius: 50%;
+                      top: ${Math.random() * 100}%;
+                      left: ${Math.random() * 100}%;
+                      animation: float ${Math.random() * 3 + 2}s ease-in-out infinite;
+                      pointer-events: none;
+                  `;
+                  if (container) container.appendChild(element);
+              }
+          }
+  
+          // Llamar la función cuando se carga la página
+          document.addEventListener('DOMContentLoaded', () => {
+              createFloatingElements();
+          });
+    </script>
+  </body>
+</html>
+<style>
+  :root {
+  --primary: #2D7D32; --primary-light: #4CAF50; --primary-dark: #1B5E20;
+  --secondary: #FF6B35; --secondary-light: #FF8A65;
+  --accent: #FFC107; --accent-light: #FFD54F;
+  --forest-green: #1B4332; --leaf-green: #52B788; --earth-brown: #8B4513;
+  --sky-blue: #87CEEB; --mist-gray: #F8F9FA; --white: #FFFFFF;
+  --gray-50: #F9FAFB; --gray-100: #F3F4F6; --gray-200: #E5E7EB; --gray-300: #D1D5DB;
+  --gray-400: #9CA3AF; --gray-500: #6B7280; --gray-600: #4B5563; --gray-700: #374151;
+  --gray-800: #1F2937; --gray-900: #111827;
+  --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-5: 1.25rem;
+  --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem;
+  /* Actualizado a Inter y Poppins según tu HTML */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Poppins', 'Inter', sans-serif;
+  --shadow-sm: 0 1px 2px 0 rgba(0,0,0,.05); --shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
+  --radius-sm: .375rem; --radius: .5rem; --radius-lg: .75rem; --radius-xl: 1rem; --radius-2xl: 1.5rem;
+  --transition: all .3s cubic-bezier(.4,0,.2,1); --transition-fast: all .15s ease-in-out; --transition-slow: all .5s cubic-bezier(.4,0,.2,1);
+}
+
+/* ===== RESET Y BASE ===== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-sans);line-height:1.6;color:var(--gray-700);background:linear-gradient(135deg,var(--mist-gray) 0%,var(--white) 100%);overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+
+/* ===== TIPOGRAFÍA ===== */
+h1,h2,h3,h4,h5,h6{font-family:var(--font-display);font-weight:600;line-height:1.2;color:var(--gray-800);margin-bottom:var(--space-4)}
+h1{font-size:3.5rem;font-weight:700}h2{font-size:2.5rem}h3{font-size:1.875rem}h4{font-size:1.5rem}
+p{margin-bottom:var(--space-4);color:var(--gray-600)}
+
+/* Estilos específicos para la Galería */
+.section h2 { /* Título principal */
+    font-size: 2.75rem;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--leaf-green) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-4);
+}
+.section > .container > p:first-of-type { /* Subtítulo principal */
+    text-align: center;
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    margin-bottom: var(--space-12); /* 3rem + 1rem base */
+}
+
+.gallery-section {
+    margin-top: var(--space-10); /* 2.5rem */
+    padding-bottom: var(--space-8);
+    border-bottom: 1px solid var(--gray-200);
+}
+.gallery-section:last-of-type {
+    border-bottom: none;
+}
+.gallery-section h4 {
+    color: var(--primary-dark);
+    margin-bottom: var(--space-6);
+    font-size: 1.5rem;
+    border-left: 5px solid var(--secondary);
+    padding-left: var(--space-3);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-4);
+}
+.gallery-grid img {
+    width: 100%;
+    height: 200px; /* Ajuste para un look más uniforme */
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    filter: brightness(0.9);
+}
+.gallery-grid img:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-xl);
+    filter: brightness(1.1);
+    border: 3px solid var(--accent);
+}
+
+/* ===== MODAL (Lightbox) ===== */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 2000; /* High z-index to cover everything */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.95); /* Black w/ opacity */
+    backdrop-filter: blur(5px);
+    padding-top: var(--space-10);
+    animation: fadeIn .3s ease-out;
+}
+.modal #modalImage {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 900px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    animation: zoomIn .4s ease-out;
+}
+.modal #modalCaption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: var(--white);
+    padding: var(--space-4) 0;
+    height: 150px;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+.modal .close {
+    position: absolute;
+    top: var(--space-6);
+    right: var(--space-10);
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: bold;
+    transition: var(--transition-fast);
+    cursor: pointer;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.modal .close:hover,
+.modal .close:focus {
+    color: var(--secondary);
+    text-decoration: none;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials {
+    margin-top: var(--space-20);
+    padding: var(--space-12) 0;
+    background: linear-gradient(135deg, var(--white) 0%, var(--gray-100) 100%);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-xl);
+    border: 1px solid var(--gray-200);
+}
+.testimonials h3 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: var(--space-10);
+    position: relative;
+    font-size: 2rem;
+}
+.testimonials h3::after {
+    content: '🌟';
+    position: absolute;
+    right: -30px;
+    top: -10px;
+    font-size: 1.2rem;
+}
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-8);
+    padding: 0 var(--space-8);
+}
+.testimonial {
+    background: var(--white);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: var(--transition-fast);
+    border-top: 5px solid var(--secondary);
+}
+.testimonial:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: var(--shadow-lg);
+}
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: var(--space-4);
+    border: 3px solid var(--primary-light);
+    box-shadow: var(--shadow-sm);
+}
+.testimonial p {
+    font-style: italic;
+    margin-bottom: var(--space-3);
+    color: var(--gray-700);
+}
+.testimonial p:last-child {
+    font-weight: 600;
+    color: var(--gray-800);
+    margin-bottom: 0;
+}
+
+/* ===== CTA Final (Usamos un div para el contenedor centralizado) ===== */
+.cta-final {
+    text-align: center; 
+    margin-top: var(--space-12);
+}
+.cta-final h3 {
+    color: var(--primary); 
+    margin-bottom: var(--space-5);
+    font-size: 1.75rem;
+}
+.cta-final .btn {
+    font-size: 1.1rem; 
+    padding: var(--space-4) var(--space-8);
+    /* Aplicamos el estilo de botón primario automáticamente */
+    background: linear-gradient(135deg,var(--primary) 0%,var(--leaf-green) 100%);
+    color: var(--white);
+    box-shadow: var(--shadow-md);
+}
+
+/* ===== UTILIDADES (Mantenidas) ===== */
+.container{max-width:1200px;margin:0 auto;padding:0 var(--space-6)}
+.flex{display:flex;align-items:center}.justify-center{justify-content:center}
+.gap-4{gap:var(--space-4)}.gap-8{gap:var(--space-8)}
+.text-center{text-align:center}.text-sm{font-size:.875rem}
+.grid{display:grid;gap:var(--space-6)}.grid-cols-4{grid-template-columns:repeat(4,1fr)}
+.tours-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:var(--space-8);margin-top:var(--space-12)}
+
+/* ===== HEADER ===== */
+.header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.85);backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid rgba(255,255,255,.3);transition:var(--transition)}
+.header.scrolled{background:rgba(255,255,255,.98);box-shadow:var(--shadow-lg)}
+.header-content{display:flex;align-items:center;justify-content:space-between;padding:var(--space-4) 0}
+.logo{font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--primary);text-decoration:none;transition:var(--transition);position:relative}
+.logo:hover{color:var(--primary-light);transform:scale(1.05)}
+.logo::after{content:'✨';position:absolute;right:-25px;top:-5px;font-size:.8rem;opacity:0;transform:scale(0);transition:var(--transition)}
+.logo:hover::after{opacity:1;transform:scale(1) rotate(20deg)}
+.nav{display:flex;gap:var(--space-8)}
+.nav-link{font-weight:500;color:var(--gray-700);text-decoration:none;position:relative;transition:var(--transition);padding:var(--space-2) 0}
+.nav-link::after{content:'';position:absolute;bottom:0;left:50%;width:0;height:2px;background:linear-gradient(90deg,var(--primary),var(--secondary));transform:translateX(-50%);transition:var(--transition)}
+.nav-link:hover{color:var(--primary)}.nav-link:hover::after{width:100%}
+.nav-link.active{color:var(--primary);font-weight:600}.nav-link.active::after{width:100%;height:3px}
+.mobile-menu-btn{display:none;flex-direction:column;background:none;border:none;cursor:pointer;padding:var(--space-2)}
+.mobile-menu-btn span{width:25px;height:3px;background:var(--gray-700);margin:3px 0;transition:var(--transition);border-radius:var(--radius-sm)}
+
+/* ===== BUTTONS (Mantenidos) ===== */
+.btn{display:inline-block;padding:var(--space-3) var(--space-6);border-radius:var(--radius-lg);text-decoration:none;font-weight:500;font-size:.95rem;text-align:center;border:none;cursor:pointer;transition:var(--transition);position:relative;overflow:hidden;transform-style:preserve-3d}
+.btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);transition:left .5s}
+.btn:hover::before{left:100%}
+.btn::after{content:'';position:absolute;top:50%;left:50%;width:0;height:0;border-radius:50%;background:rgba(255,255,255,.5);transform:translate(-50%,-50%);transition:width .6s,height .6s}
+.btn:active{transform:translateY(1px)}.btn:active::after{width:300px;height:300px}
+.btn-primary{background:linear-gradient(135deg,var(--primary) 0%,var(--leaf-green) 100%);color:var(--white);box-shadow:var(--shadow-md)}
+.btn-primary:hover{background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary) 100%);transform:translateY(-2px);box-shadow:var(--shadow-xl);filter:brightness(1.1) saturate(1.2)}
+.btn-secondary{background:linear-gradient(135deg,var(--secondary) 0%,var(--accent) 100%);color:var(--white);box-shadow:var(--shadow-md)}
+.btn-secondary:hover{background:linear-gradient(135deg,var(--secondary-light) 0%,var(--accent-light) 100%);transform:translateY(-2px);box-shadow:var(--shadow-xl)}
+.btn-large{padding:var(--space-4) var(--space-8);font-size:1.1rem}
+.btn-small{padding:var(--space-2) var(--space-4);font-size:.875rem}
+
+/* ===== SECTIONS (Mantenidos) ===== */
+.section{padding:var(--space-20) 0;position:relative;opacity:0;transform:translateY(50px);transition:var(--transition-slow);background-attachment:fixed}
+.section.in-view{opacity:1;transform:translateY(0)}
+.section:nth-child(even){background:linear-gradient(135deg,var(--gray-50) 0%,var(--white) 100%)}
+.section::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background-image:radial-gradient(circle at 20% 20%,rgba(76,175,80,.1) 1px,transparent 1px),radial-gradient(circle at 80% 80%,rgba(255,107,53,.1) 1px,transparent 1px);background-size:50px 50px,30px 30px;animation:float 20s ease-in-out infinite;pointer-events:none}
+
+/* ===== CAROUSEL (Mantenidos y adaptados) ===== */
+.carousel-container{position:relative;max-width:1000px;margin:0 auto;border-radius:var(--radius-2xl);overflow:hidden;box-shadow:var(--shadow-xl)}
+.carousel-container::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(45deg,rgba(255,255,255,.1) 25%,transparent 25%,transparent 75%,rgba(255,255,255,.1) 75%);background-size:20px 20px;pointer-events:none;opacity:0;transition:var(--transition)}
+.carousel-container:hover::before{opacity:1;animation:shimmer 2s linear infinite}
+.carousel{display:flex;transition:transform .5s cubic-bezier(.4,0,.2,1)}
+.carousel img { /* Estilo directo a la imagen dentro del carrusel */
+    min-width: 100%;
+    position: relative;
+    height: 500px;
+    object-fit: cover;
+    will-change: transform;
+    transition: var(--transition-slow);
+}
+.carousel-slide:hover img{transform:scale(1.05)} /* Se mantiene por si se usa la clase slide */
+.carousel-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.8));color:var(--white);padding:var(--space-8);text-align:center}
+.carousel-overlay h3{font-size:2rem;margin-bottom:var(--space-2);color:var(--white)}
+.carousel-overlay p{font-size:1.1rem;color:rgba(255,255,255,.9);margin:0}
+.carousel-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.9);border:none;width:50px;height:50px;border-radius:50%;font-size:1.5rem;color:var(--primary);cursor:pointer;transition:var(--transition);backdrop-filter:blur(10px);box-shadow:var(--shadow-lg)}
+.carousel-nav:hover{background:var(--white);transform:translateY(-50%) scale(1.1);box-shadow:var(--shadow-xl)}
+.carousel-prev{left:var(--space-4)}.carousel-next{right:var(--space-4)}
+.carousel-indicators{position:absolute;bottom:var(--space-4);left:50%;transform:translateX(-50%);display:flex;gap:var(--space-2)}
+.indicator{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,.5);cursor:pointer;transition:var(--transition);-webkit-tap-highlight-color:transparent}
+.indicator.active{background:var(--white);transform:scale(1.2);box-shadow:0 0 0 2px var(--primary)}
+
+/* ===== FOOTER (Mantenidos) ===== */
+.footer{background:linear-gradient(135deg,var(--forest-green) 0%,var(--gray-800) 100%);color:var(--white);padding:var(--space-16) 0 var(--space-8);position:relative}
+.footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--primary-light),transparent)}
+.footer-content{display:grid;grid-template-columns:2fr 1fr 1fr;gap:var(--space-12);margin-bottom:var(--space-8)}
+.footer-section h3{color:var(--white);font-size:1.25rem;margin-bottom:var(--space-4)}
+.footer-section p{color:rgba(255,255,255,.8);line-height:1.6}
+.footer-section a{color:rgba(255,255,255,.8);text-decoration:none;transition:var(--transition)}
+.footer-section a:hover{color:var(--accent-light)}
+/* Estilos para los botones del footer (Redes Sociales) */
+.btn-small svg {
+    margin-right: var(--space-2);
+}
+.btn:nth-child(1):hover {background: rgba(66, 103, 178, 0.2);border-color: #4267B2;box-shadow:0 8px 25px rgba(0, 0, 0, 0.3),0 0 20px rgba(66, 103, 178, 0.3); color: #4267B2;}
+.btn:nth-child(2):hover {background: rgba(37, 211, 102, 0.2);border-color: #25D366;box-shadow:0 8px 25px rgba(0, 0, 0, 0.3),0 0 20px rgba(37, 211, 102, 0.3); color: #25D366;}
+.btn:nth-child(3):hover {background: rgba(234, 67, 53, 0.2);border-color: #EA4335;box-shadow:0 8px 25px rgba(0, 0, 0, 0.3),0 0 20px rgba(234, 67, 53, 0.3); color: #EA4335;}
+.footer-bottom p {text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);}
+
+/* ===== ANIMACIONES (Mantenidos) ===== */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes glow{0%,100%{box-shadow:0 0 20px rgba(45,125,50,.3)}50%{box-shadow:0 0 40px rgba(45,125,50,.6)}}
+@keyframes shimmer{0%{transform:translateX(-100%) translateY(-100%) rotate(45deg);opacity:0}50%{opacity:1}100%{transform:translateX(100%) translateY(100%) rotate(45deg);opacity:0}}
+@keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes loading{0%{left:-100%}100%{left:100%}}
+@keyframes pageEnter{to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes zoomIn{from{transform:scale(0.8)}to{transform:scale(1)}}
+
+/* ===== ESTADOS Y EFECTOS (Mantenidos) ===== */
+::selection{background:var(--primary-light);color:var(--white)}::-moz-selection{background:var(--primary-light);color:var(--white)}
+.nav-link:focus,.btn:focus{outline:2px solid var(--accent);outline-offset:2px}
+body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--secondary),var(--accent));z-index:9999;transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+a,button,.card,.indicator{-webkit-tap-highlight-color:transparent}
+img{transition:opacity .3s ease}img.loading{opacity:.5;filter:blur(2px)}
+
+/* ===== SCROLLBAR (Mantenidos) ===== */
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:var(--gray-100)}
+::-webkit-scrollbar-thumb{background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%);border-radius:var(--radius-xl)}
+::-webkit-scrollbar-thumb:hover{background:linear-gradient(135deg,var(--primary-dark) 0%,var(--secondary) 100%)}
+
+/* ===== RESPONSIVE (Mantenidos y adaptados) ===== */
+@media (max-width:1024px){
+.gallery-grid{grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));} /* Ajuste en tablet */
+.testimonial-grid{grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
+.footer-content{grid-template-columns:1fr;gap:var(--space-8);text-align:center}
+.carousel img {height: 400px;}
+}
+@media (max-width:768px){
+.nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;padding:var(--space-4);box-shadow:var(--shadow-lg);border-radius:0 0 var(--radius-lg) var(--radius-lg)}
+.nav.mobile-active{display:flex}.mobile-menu-btn{display:flex}
+.section h2{font-size:2rem}
+.section > .container > p:first-of-type{margin-bottom: var(--space-8);}
+.gallery-grid{grid-template-columns: 1fr 1fr; gap: var(--space-3);} /* 2 columnas en móvil */
+.carousel img {height: 300px;}
+.carousel-nav{width:40px;height:40px;font-size:1.2rem}
+.container{padding:0 var(--space-4)}
+}
+@media (max-width:480px){
+.gallery-grid{grid-template-columns: 1fr;} /* 1 columna en móvil pequeño */
+.carousel img {height: 250px;}
+.cta-final .btn{width: 100%;}
+.testimonial-grid{grid-template-columns: 1fr;}
+}
+</style>

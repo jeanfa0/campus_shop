@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Tours en Tingo María</title>
+  <link rel="preload" href="mi-fuente.woff2" as="font" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#index.html" class="logo">Tours Tingo María</a>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="sobre.html" class="nav-link">Sobre mí</a>
+          <a href="tours.html" class="nav-link">Tours</a>
+          <a href="galeria.html" class="nav-link">Galería</a>
+          <a href="contacto.html" class="nav-link active">Contacto</a>
+        </nav>
+        <button class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section id="contacto" class="section in-view">
+    <div class="container">
+      <h2>¡Reserva tu Aventura!</h2>
+      <p class="contact-subtitle">
+        Ponte en contacto conmigo para planificar tu experiencia perfecta en Tingo María
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-form-card">
+          <h3>Envíame un Mensaje</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="nombre" class="form-label">Nombre Completo *</label>
+              <input type="text" id="nombre" name="nombre" required class="form-input" placeholder="Tu nombre completo">
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email *</label>
+              <input type="email" id="email" name="email" required class="form-input" placeholder="tu@email.com">
+            </div>
+            <div class="form-group">
+              <label for="telefono" class="form-label">Teléfono / WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="+51 xxx xxx xxx">
+            </div>
+            <div class="form-group">
+              <label for="tour" class="form-label">Tour de Interés *</label>
+              <select id="tour" name="tour" required class="form-select">
+                <option value="">Selecciona un tour</option>
+                <option value="cueva-lechuzas">Cueva de las Lechuzas</option>
+                <option value="bella-durmiente">La Bella Durmiente</option>
+                <option value="catarata-santa-carmen">Catarata de Santa Carmen</option>
+                <option value="safari-nocturno">Safari Nocturno</option>
+                <option value="dia-completo">Tour de Día Completo</option>
+                <option value="personalizado">Tour Personalizado</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fecha" class="form-label">Fecha Preferida</label>
+              <input type="date" id="fecha" name="fecha" class="form-input">
+            </div>
+            <div class="form-group">
+              <label for="personas" class="form-label">Número de Personas</label>
+              <input type="number" id="personas" name="personas" min="1" max="15" class="form-input"
+                placeholder="¿Cuántas personas?">
+            </div>
+            <div class="form-group">
+              <label for="mensaje" class="form-label">Mensaje Adicional</label>
+              <textarea id="mensaje" name="mensaje" rows="4" class="form-textarea"
+                placeholder="Cuéntame sobre tus intereses, experiencia previa o cualquier solicitud especial..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Enviar Mensaje</button>
+          </form>
+        </div>
+
+        <div>
+          <div class="contact-info-card">
+            <h3>Información de Contacto</h3>
+            <div>
+              <p class="info-item"><strong>📱 WhatsApp:</strong> +51 xxx xxx xxx</p>
+              <p class="info-item"><strong>📧 Email:</strong> tours@tingomaria.com</p>
+              <p class="info-item"><strong>📍 Ubicación:</strong> Tingo María, Huánuco, Perú</p>
+              <p class="info-item"><strong>🕒 Horario:</strong> Todos los días 7:00 AM - 8:00 PM</p>
+              <p class="info-item"><strong>💬 Idiomas:</strong> Español, Inglés básico, Quechua</p>
+            </div>
+          </div>
+
+          <div class="cta-card">
+            <h3>🚀 Respuesta Rápida</h3>
+            <p>Respondo todos los mensajes en menos de 2 horas durante horario de atención.</p>
+            <a href="https://wa.me/51999077758" class="btn btn-whatsapp btn-small">Escribir por WhatsApp</a>
+          </div>
+
+          <div class="contact-policy-card">
+            <h3>📋 Políticas de Reserva</h3>
+            <ul class="policy-list">
+              <li>✅ Reserva mínimo 24 horas antes</li>
+              <li>💳 Pago: 50% adelanto, 50% al inicio del tour</li>
+              <li>🔄 Cancelación gratuita hasta 48 horas antes</li>
+              <li>🌧️ Tours se reprograman por mal clima</li>
+              <li>👥 Grupos máximo 15 personas</li>
+              <li>🎒 Lista de qué llevar enviada por WhatsApp</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-map-card">
+        <h3>¿Dónde me encontrarás?</h3>
+        <div class="map-info-box">
+          <p>📍 <strong>Punto de encuentro principal:</strong> Plaza de Armas de Tingo María</p>
+          <p class="text-sm">
+            También ofrezco recojo desde tu hotel o alojamiento en el centro de la ciudad sin costo adicional.
+          </p>
+        </div>
+      </div>
+
+      <div id="mensajeConfirmacion">
+        <h3>¡Mensaje Enviado Exitosamente! ✅</h3>
+        <p>Gracias por tu interés. Te contactaré muy pronto para coordinar todos los detalles de tu aventura.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>🌿 Tingo María Tours</h3>
+          <p>Tu guía personal para descubrir la magia de la Amazonía peruana. Experiencias auténticas en el corazón de
+            la selva.</p>
+          <div style="margin-top: var(--space-4);">
+            <p><strong>📍 Ubicación:</strong> Tingo María, Huánuco</p>
+            <p><strong>🕐 Horario:</strong> 24/7 disponible</p>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>🗺️ Servicios</h3>
+          <div class="flex" style="flex-direction: column; gap: var(--space-2);">
+            <a href="tours.html">🌊 Tours de Aventura</a>
+            <a href="galeria.html">📸 Galería de Momentos</a>
+            <a href="sobre.html">👨‍🏫 Conoce a tu Guía</a>
+            <a href="contacto.html">📞 Reserva tu Tour</a>
+            <a href="#testimonios">⭐ Testimonios</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>📱 Conecta Conmigo</h3>
+          <p style="margin-bottom: var(--space-4); font-size: 0.9rem;">¡Sígueme para ver las últimas aventuras!</p>
+          <div class="flex" style="flex-direction: column; gap: var(--space-2);">
+            <a href="#" class="btn btn-small">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+              Facebook
+            </a>
+            <a href="#" class="btn btn-small">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+              </svg>
+              WhatsApp
+            </a>
+            <a href="#" class="btn btn-small">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.846L12 10.855l9.518-7.035h.846c.904 0 1.636.732 1.636 1.636z" />
+              </svg>
+              Gmail
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <p>&copy; 2025 Tingo María Tours | Todos los derechos reservados</p>
+          <p style="font-size: 0.875rem;">🌱 Turismo responsable y sostenible. Creando memorias inolvidables en la selva
+            amazónica del Perú</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+// =================================================================
+// FUNCIÓN PRINCIPAL: MANEJO DEL FORMULARIO Y ENVÍO POR WHATSAPP
+// =================================================================
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // 1. Obtiene los valores de los campos
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    const telefono = document.getElementById('telefono').value;
+    
+    const tourSelect = document.getElementById('tour');
+    const tour = tourSelect.options[tourSelect.selectedIndex].text; 
+    
+    const fecha = document.getElementById('fecha').value;
+    const personas = parseInt(document.getElementById('personas').value, 10);
+    const mensaje = document.getElementById('mensaje').value;
+
+    // 2. VALIDACIÓN: Campos obligatorios
+    if (!nombre || !email || tour === "Selecciona un tour") {
+         alert('Por favor completa los campos obligatorios: Nombre, Email y Tour de Interés.');
+         return; 
+    }
+
+    // 3. VALIDACIÓN: Máximo de personas (15)
+    const maxPersonas = 15;
+    if (personas > maxPersonas) {
+         alert(`⚠️ ¡Atención! El máximo permitido para esta reserva es de ${maxPersonas} personas. Por favor ajusta el número.`);
+         return; 
+    }
+    
+    // 4. Define tu número de WhatsApp
+    const numeroWhatsApp = "51912453016"; 
+
+    // 5. Construye el mensaje con emojis
+    // Emojis en formato que WhatsApp siempre reconoce
+    const emojis = {
+        sobre: String.fromCodePoint(0x1F4E9),      // 📩
+        palmera: String.fromCodePoint(0x1F334),    // 🌴
+        calendario: String.fromCodePoint(0x1F4C5), // 📅
+        personas: String.fromCodePoint(0x1F465),   // 👥
+        usuario: String.fromCodePoint(0x1F464),    // 👤
+        mensaje: String.fromCodePoint(0x1F4AC)     // 💬
+    };
+    
+    let messageLines = [];
+
+    messageLines.push(`*${emojis.sobre} NUEVA SOLICITUD DE RESERVA - WEB*`);
+    messageLines.push(`━━━━━━━━━━━━━━━━━━━━`); 
+    
+    // SECCIÓN DE INTERÉS
+    messageLines.push(`*${emojis.palmera} Tour de Interés:* ${tour}`);
+    if (fecha) {
+        messageLines.push(`*${emojis.calendario} Fecha Preferida:* ${fecha}`);
+    }
+    if (personas) {
+        messageLines.push(`*${emojis.personas} Número de Personas:* ${personas}`);
+    }
+    
+    // SECCIÓN DE CONTACTO
+    messageLines.push(`\n*${emojis.usuario} Datos del Contacto*`);
+    messageLines.push(`> *Nombre:* ${nombre}`);
+    messageLines.push(`> *Email:* ${email}`);
+
+    if (telefono) {
+        messageLines.push(`> *Teléfono:* ${telefono}`);
+    } 
+    
+    // MENSAJE ADICIONAL
+    if (mensaje) {
+        messageLines.push(`\n*${emojis.mensaje} Mensaje Adicional:*`);
+        messageLines.push(`${mensaje}`);
+    }
+
+    messageLines.push(`\n━━━━━━━━━━━━━━━━━━━━`);
+    messageLines.push(`_Listo para coordinar los detalles. ¡Gracias!_`);
+
+    // Unimos todas las líneas con salto de línea
+    const mensajeWhatsApp = messageLines.join('\n');
+
+    // 6. Crea la URL y abre WhatsApp con encodeURIComponent
+    const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensajeWhatsApp)}`;
+    window.open(urlWhatsApp, '_blank');
+    
+    // 7. Muestra el feedback en la página
+    document.getElementById('mensajeConfirmacion').style.display = 'block';
+    this.reset();
+    document.getElementById('mensajeConfirmacion').scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'center' 
+    });
+
+    setTimeout(() => {
+        document.getElementById('mensajeConfirmacion').style.display = 'none';
+    }, 5000);
+});
+
+// =================================================================
+// FUNCIONES AUXILIARES
+// =================================================================
+
+// Establecer fecha mínima como hoy
+const today = new Date().toISOString().split('T')[0];
+document.getElementById('fecha').setAttribute('min', today);
+
+// Animación de aparición al hacer scroll
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+        }
+    });
+}, observerOptions);
+
+// Observar elementos para animación
+document.querySelectorAll('section > div').forEach(element => {
+    observer.observe(element);
+});
+</script>
+</body>
+</html>
+
+<style>
+  :root {
+    --primary: #2D7D32;
+    --primary-light: #4CAF50;
+    --primary-dark: #1B5E20;
+    --secondary: #FF6B35;
+    --secondary-light: #FF8A65;
+    --accent: #FFC107;
+    --accent-light: #FFD54F;
+    --forest-green: #1B4332;
+    --leaf-green: #52B788;
+    --earth-brown: #8B4513;
+    --sky-blue: #87CEEB;
+    --mist-gray: #F8F9FA;
+    --white: #FFFFFF;
+    --gray-50: #F9FAFB;
+    --gray-100: #F3F4F6;
+    --gray-200: #E5E7EB;
+    --gray-300: #D1D5DB;
+    --gray-400: #9CA3AF;
+    --gray-500: #6B7280;
+    --gray-600: #4B5563;
+    --gray-700: #374151;
+    --gray-800: #1F2937;
+    --gray-900: #111827;
+    --space-1: .25rem;
+    --space-2: .5rem;
+    --space-3: .75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --font-sans: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    --font-display: 'Nunito', 'Poppins', sans-serif;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04);
+    --radius-sm: .375rem;
+    --radius: .5rem;
+    --radius-lg: .75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    --transition: all .3s cubic-bezier(.4, 0, .2, 1);
+    --transition-fast: all .15s ease-in-out;
+    --transition-slow: all .5s cubic-bezier(.4, 0, .2, 1);
+  }
+
+  /* ===== RESET Y BASE ===== */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px
+  }
+
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    color: var(--gray-700);
+    background: linear-gradient(135deg, var(--mist-gray) 0%, var(--white) 100%);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility
+  }
+
+  /* ===== TIPOGRAFÍA ===== */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--gray-800);
+    margin-bottom: var(--space-4)
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700
+  }
+
+  h2 {
+    font-size: 2.5rem
+  }
+
+  h3 {
+    font-size: 1.875rem
+  }
+
+  h4 {
+    font-size: 1.5rem
+  }
+
+  p {
+    margin-bottom: var(--space-4);
+    color: var(--gray-600)
+  }
+
+  /* ===== UTILIDADES ===== */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-6)
+  }
+
+  .flex {
+    display: flex;
+    align-items: center
+  }
+
+  .justify-center {
+    justify-content: center
+  }
+
+  .gap-4 {
+    gap: var(--space-4)
+  }
+
+  .gap-8 {
+    gap: var(--space-8)
+  }
+
+  .text-center {
+    text-align: center
+  }
+
+  .text-sm {
+    font-size: .875rem
+  }
+
+  .grid {
+    display: grid;
+    gap: var(--space-6)
+  }
+
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr)
+  }
+
+  .tours-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-8);
+    margin-top: var(--space-12)
+  }
+
+  /* Clases específicas de Contacto (Reemplazan los estilos inline) */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-10);
+    /* 40px */
+    margin-bottom: var(--space-10);
+    align-items: flex-start;
+    /* Alinea al inicio para que las secciones se vean limpias */
+  }
+
+  .contact-form-card,
+  .contact-info-card,
+  .contact-policy-card,
+  .contact-map-card {
+    background: var(--white);
+    padding: var(--space-10);
+    /* 40px */
+    border-radius: var(--radius-2xl);
+    /* 15px */
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-fast);
+  }
+
+  .contact-form-card:hover,
+  .contact-info-card:hover,
+  .contact-policy-card:hover,
+  .contact-map-card:hover {
+    box-shadow: var(--shadow-xl);
+  }
+
+  .contact-form-card h3,
+  .contact-info-card h3,
+  .contact-policy-card h3,
+  .contact-map-card h3 {
+    color: var(--primary-dark);
+    /* Un tono más oscuro para el contraste */
+    margin-bottom: var(--space-6);
+  }
+
+  .form-group {
+    margin-bottom: var(--space-6);
+  }
+
+  .form-label {
+    display: block;
+    margin-bottom: var(--space-2);
+    color: var(--gray-700);
+    font-weight: 500;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    width: 100%;
+    padding: var(--space-3);
+    border: 2px solid var(--gray-300);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    transition: var(--transition-fast);
+  }
+
+  .form-input:focus,
+  .form-select:focus,
+  .form-textarea:focus {
+    border-color: var(--primary-light);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+  }
+
+  .form-textarea {
+    resize: vertical;
+  }
+
+  .info-item {
+    color: var(--gray-700);
+    font-size: 1.05rem;
+    line-height: 2;
+    margin-bottom: var(--space-2);
+  }
+
+  .info-item strong {
+    color: var(--gray-800);
+    font-weight: 600;
+  }
+
+  .cta-card {
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+    /* Usando las variables secundarias y de acento */
+    color: var(--white);
+    padding: var(--space-8);
+    border-radius: var(--radius-2xl);
+    margin-bottom: var(--space-8);
+    box-shadow: var(--shadow-md);
+  }
+
+  .cta-card h3 {
+    color: var(--white);
+    margin-bottom: var(--space-4);
+    font-size: 1.35rem;
+  }
+
+  .cta-card p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--space-4);
+  }
+
+  .cta-card .btn-whatsapp {
+    background: var(--white);
+    color: var(--secondary);
+    /* Color del texto a juego con el fondo de la card */
+    text-decoration: none;
+  }
+
+  .cta-card .btn-whatsapp:hover {
+    background: var(--gray-100);
+  }
+
+  .policy-list {
+    color: var(--gray-700);
+    line-height: 1.8;
+    list-style: none;
+    padding: 0;
+  }
+
+  .policy-list li {
+    margin-bottom: var(--space-3);
+    font-size: 1rem;
+  }
+
+  .map-info-box {
+    background: var(--gray-100);
+    padding: var(--space-8);
+    border-radius: var(--radius-lg);
+    text-align: center;
+  }
+
+  .map-info-box p {
+    color: var(--gray-700);
+    margin-bottom: var(--space-3);
+  }
+
+  .map-info-box strong {
+    color: var(--primary-dark);
+  }
+
+  #mensajeConfirmacion {
+    display: none;
+    background: linear-gradient(90deg, var(--leaf-green), var(--primary-light));
+    color: var(--white);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    margin-top: var(--space-6);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    animation: fadeInUp .5s ease-out both;
+  }
+
+  #mensajeConfirmacion h3 {
+    color: var(--white);
+    margin-bottom: var(--space-2);
+  }
+
+  #mensajeConfirmacion p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+  }
+
+  /* Fin Clases específicas de Contacto */
+
+  /* ===== HEADER ===== */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, .85);
+    backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    transition: var(--transition)
+  }
+
+  .header.scrolled {
+    background: rgba(255, 255, 255, .98);
+    box-shadow: var(--shadow-lg)
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-4) 0
+  }
+
+  .logo {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+    transition: var(--transition);
+    position: relative
+  }
+
+  .logo:hover {
+    color: var(--primary-light);
+    transform: scale(1.05)
+  }
+
+  .logo::after {
+    content: '✨';
+    position: absolute;
+    right: -25px;
+    top: -5px;
+    font-size: .8rem;
+    opacity: 0;
+    transform: scale(0);
+    transition: var(--transition)
+  }
+
+  .logo:hover::after {
+    opacity: 1;
+    transform: scale(1) rotate(20deg)
+  }
+
+  .nav {
+    display: flex;
+    gap: var(--space-8)
+  }
+
+  .nav-link {
+    font-weight: 500;
+    color: var(--gray-700);
+    text-decoration: none;
+    position: relative;
+    transition: var(--transition);
+    padding: var(--space-2) 0
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transform: translateX(-50%);
+    transition: var(--transition)
+  }
+
+  .nav-link:hover {
+    color: var(--primary)
+  }
+
+  .nav-link:hover::after {
+    width: 100%
+  }
+
+  .nav-link.active {
+    color: var(--primary);
+    font-weight: 600
+  }
+
+  .nav-link.active::after {
+    width: 100%;
+    height: 3px
+  }
+
+  .mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-2)
+  }
+
+  .mobile-menu-btn span {
+    width: 25px;
+    height: 3px;
+    background: var(--gray-700);
+    margin: 3px 0;
+    transition: var(--transition);
+    border-radius: var(--radius-sm)
+  }
+
+  /* ===== HERO (No aplica directamente pero se mantiene por si se usa en otras páginas) ===== */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    overflow: hidden
+  }
+
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(45, 125, 50, .9) 0%, rgba(27, 94, 32, .8) 50%, rgba(255, 107, 53, .7) 100%), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80') center/cover;
+    background-attachment: fixed;
+    background-size: 200% 200%;
+    z-index: -1;
+    animation: gradientShift 15s ease infinite;
+    will-change: transform
+  }
+
+  .hero-content {
+    max-width: 800px;
+    padding: var(--space-8);
+    position: relative;
+    z-index: 1
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: var(--space-6);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    color: var(--white);
+    background: linear-gradient(135deg, var(--white) 0%, rgba(255, 255, 255, .9) 50%, var(--accent-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInUp 1s ease-out .2s both
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-8);
+    color: rgba(255, 255, 255, .9);
+    font-weight: 300;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    animation: fadeInUp 1s ease-out .4s both
+  }
+
+  /* ===== BUTTONS ===== */
+  .btn {
+    display: inline-block;
+    padding: var(--space-3) var(--space-6);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: .95rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d
+  }
+
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .3), transparent);
+    transition: left .5s
+  }
+
+  .btn:hover::before {
+    left: 100%
+  }
+
+  .btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .5);
+    transform: translate(-50%, -50%);
+    transition: width .6s, height .6s
+  }
+
+  .btn:active {
+    transform: translateY(1px)
+  }
+
+  .btn:active::after {
+    width: 300px;
+    height: 300px
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--leaf-green) 100%);
+    color: var(--white);
+    box-shadow: var(--shadow-md)
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-xl);
+    filter: brightness(1.1) saturate(1.2)
+  }
+
+  .btn-secondary {
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+    color: var(--white);
+    box-shadow: var(--shadow-md)
+  }
+
+  .btn-secondary:hover {
+    background: linear-gradient(135deg, var(--secondary-light) 0%, var(--accent-light) 100%);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-xl)
+  }
+
+  .btn-large {
+    padding: var(--space-4) var(--space-8);
+    font-size: 1.1rem
+  }
+
+  .btn-small {
+    padding: var(--space-2) var(--space-4);
+    font-size: .875rem
+  }
+
+  /* ===== SECTIONS ===== */
+  .section {
+    padding: var(--space-20) 0;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: var(--transition-slow);
+    background-attachment: fixed
+  }
+
+  .section.in-view {
+    opacity: 1;
+    transform: translateY(0)
+  }
+
+  .section:nth-child(even) {
+    background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%)
+  }
+
+  .section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle at 20% 20%, rgba(76, 175, 80, .1) 1px, transparent 1px), radial-gradient(circle at 80% 80%, rgba(255, 107, 53, .1) 1px, transparent 1px);
+    background-size: 50px 50px, 30px 30px;
+    animation: float 20s ease-in-out infinite;
+    pointer-events: none
+  }
+
+  .section-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto var(--space-12)
+  }
+
+  .section-title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--leaf-green) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-4);
+    position: relative;
+    display: inline-block
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: var(--radius-xl)
+  }
+
+  .section-subtitle {
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    line-height: 1.7;
+    font-weight: 300
+  }
+
+  /* La sección de contacto no tiene header, ajustamos el título y subtítulo localmente */
+  #contacto h2 {
+    font-size: 2.75rem;
+    /* Ajuste para que se parezca al section-title */
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--leaf-green) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-4);
+    position: relative;
+    display: block;
+    /* Para centrar el after */
+  }
+
+  #contacto h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: var(--radius-xl);
+  }
+
+  .contact-subtitle {
+    text-align: center;
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    margin-bottom: var(--space-10);
+    /* 40px */
+  }
+
+  /* Las secciones de contacto son como cards, pero usamos nombres más descriptivos */
+  /* No aplicamos las reglas de .card ya que son más específicas de un componente */
+
+  /* ===== TOUR CARDS (Mantener por si se usan en otras páginas) ===== */
+  .tour-card {
+    background: linear-gradient(135deg, var(--white) 0%, var(--gray-50) 100%);
+    border: 1px solid var(--gray-200);
+    transition: var(--transition-slow)
+  }
+
+  .tour-card:hover {
+    background: var(--white);
+    border-color: var(--primary-light)
+  }
+
+  .tour-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(76, 175, 80, .1), transparent);
+    transform: rotate(45deg);
+    transition: var(--transition-slow);
+    opacity: 0
+  }
+
+  .tour-card:hover::after {
+    animation: shimmer 1.5s ease-in-out
+  }
+
+  .tour-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-top: var(--space-4)
+  }
+
+  .feature-tag {
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--leaf-green) 100%);
+    color: var(--white);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-xl);
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    box-shadow: var(--shadow-sm)
+  }
+
+  /* ===== CAROUSEL (Mantener por si se usan en otras páginas) ===== */
+  .carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl)
+  }
+
+  .carousel-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 255, 255, .1) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, .1) 75%);
+    background-size: 20px 20px;
+    pointer-events: none;
+    opacity: 0;
+    transition: var(--transition)
+  }
+
+  .carousel-container:hover::before {
+    opacity: 1;
+    animation: shimmer 2s linear infinite
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform .5s cubic-bezier(.4, 0, .2, 1)
+  }
+
+  .carousel-slide {
+    min-width: 100%;
+    position: relative;
+    height: 500px;
+    will-change: transform
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow)
+  }
+
+  .carousel-slide:hover img {
+    transform: scale(1.05)
+  }
+
+  .carousel-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, .8));
+    color: var(--white);
+    padding: var(--space-8);
+    text-align: center
+  }
+
+  .carousel-overlay h3 {
+    font-size: 2rem;
+    margin-bottom: var(--space-2);
+    color: var(--white)
+  }
+
+  .carousel-overlay p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, .9);
+    margin: 0
+  }
+
+  .carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, .9);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: var(--primary);
+    cursor: pointer;
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-lg)
+  }
+
+  .carousel-nav:hover {
+    background: var(--white);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: var(--shadow-xl)
+  }
+
+  .carousel-prev {
+    left: var(--space-4)
+  }
+
+  .carousel-next {
+    right: var(--space-4)
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: var(--space-4);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: var(--space-2)
+  }
+
+  .indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    transition: var(--transition);
+    -webkit-tap-highlight-color: transparent
+  }
+
+  .indicator.active {
+    background: var(--white);
+    transform: scale(1.2);
+    box-shadow: 0 0 0 2px var(--primary)
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    background: linear-gradient(135deg, var(--forest-green) 0%, var(--gray-800) 100%);
+    color: var(--white);
+    padding: var(--space-16) 0 var(--space-8);
+    position: relative
+  }
+
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary-light), transparent)
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: var(--space-12);
+    margin-bottom: var(--space-8)
+  }
+
+  .footer-section h3 {
+    color: var(--white);
+    font-size: 1.25rem;
+    margin-bottom: var(--space-4)
+  }
+
+  .footer-section p {
+    color: rgba(255, 255, 255, .8);
+    line-height: 1.6
+  }
+
+  .footer-section a {
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+    transition: var(--transition)
+  }
+
+  .footer-section a:hover {
+    color: var(--accent-light)
+  }
+
+  /* Estilos para los botones del footer (Redes Sociales) */
+  .btn-small svg {
+    margin-right: var(--space-2);
+  }
+
+  .btn:nth-child(1):hover {
+    background: rgba(66, 103, 178, 0.2);
+    border-color: #4267B2;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 20px rgba(66, 103, 178, 0.3);
+    color: #4267B2;
+  }
+
+  .btn:nth-child(2):hover {
+    background: rgba(37, 211, 102, 0.2);
+    border-color: #25D366;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 20px rgba(37, 211, 102, 0.3);
+    color: #25D366;
+  }
+
+  .btn:nth-child(3):hover {
+    background: rgba(234, 67, 53, 0.2);
+    border-color: #EA4335;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 20px rgba(234, 67, 53, 0.3);
+    color: #EA4335;
+  }
+
+  .footer-bottom p {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  /* ===== ANIMACIONES ===== */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px)
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0)
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0)
+    }
+
+    50% {
+      transform: translateY(-10px)
+    }
+  }
+
+  @keyframes glow {
+
+    0%,
+    100% {
+      box-shadow: 0 0 20px rgba(45, 125, 50, .3)
+    }
+
+    50% {
+      box-shadow: 0 0 40px rgba(45, 125, 50, .6)
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%) translateY(-100%) rotate(45deg);
+      opacity: 0
+    }
+
+    50% {
+      opacity: 1
+    }
+
+    100% {
+      transform: translateX(100%) translateY(100%) rotate(45deg);
+      opacity: 0
+    }
+  }
+
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%
+    }
+
+    50% {
+      background-position: 100% 50%
+    }
+
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @keyframes loading {
+    0% {
+      left: -100%
+    }
+
+    100% {
+      left: 100%
+    }
+  }
+
+  @keyframes pageEnter {
+    to {
+      opacity: 1;
+      transform: translateY(0)
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp .8s ease-out forwards
+  }
+
+  .card:hover .card-icon {
+    animation: float 2s ease-in-out infinite
+  }
+
+  .grid>* {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp .6s ease-out forwards
+  }
+
+  .grid>*:nth-child(1) {
+    animation-delay: .1s
+  }
+
+  .grid>*:nth-child(2) {
+    animation-delay: .2s
+  }
+
+  .grid>*:nth-child(3) {
+    animation-delay: .3s
+  }
+
+  .grid>*:nth-child(4) {
+    animation-delay: .4s
+  }
+
+  .page-transition {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: pageEnter .8s ease-out forwards
+  }
+
+  .loading {
+    position: relative;
+    overflow: hidden
+  }
+
+  .loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    animation: loading 1.5s infinite
+  }
+
+  /* ===== ESTADOS Y EFECTOS ===== */
+  ::selection {
+    background: var(--primary-light);
+    color: var(--white)
+  }
+
+  ::-moz-selection {
+    background: var(--primary-light);
+    color: var(--white)
+  }
+
+  .nav-link:focus,
+  .btn:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+    z-index: 9999;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease
+  }
+
+  a,
+  button,
+  .card,
+  .indicator {
+    -webkit-tap-highlight-color: transparent
+  }
+
+  input.error,
+  textarea.error,
+  .form-input.error,
+  .form-select.error,
+  .form-textarea.error {
+    border-color: #EF4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, .1)
+  }
+
+  img {
+    transition: opacity .3s ease
+  }
+
+  img.loading {
+    opacity: .5;
+    filter: blur(2px)
+  }
+
+  /* ===== SCROLLBAR ===== */
+  ::-webkit-scrollbar {
+    width: 8px
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--gray-100)
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    border-radius: var(--radius-xl)
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary) 100%)
+  }
+
+  /* ===== NOTIFICATIONS ===== */
+  .notification {
+    position: fixed;
+    top: var(--space-4);
+    right: var(--space-4);
+    padding: var(--space-4) var(--space-6);
+    border-radius: var(--radius-lg);
+    color: var(--white);
+    font-weight: 500;
+    z-index: 10000;
+    transform: translateX(100%);
+    animation: slideIn .3s ease forwards;
+    box-shadow: var(--shadow-xl)
+  }
+
+  .notification-info {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)
+  }
+
+  .notification-success {
+    background: linear-gradient(135deg, var(--leaf-green) 0%, var(--primary-light) 100%)
+  }
+
+  @keyframes slideIn {
+    to {
+      transform: translateX(0)
+    }
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width:1024px) {
+    .grid-cols-4 {
+      grid-template-columns: repeat(2, 1fr)
+    }
+
+    .tours-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-6)
+    }
+
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+      text-align: center
+    }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+    }
+
+    /* Contacto a una columna */
+  }
+
+  @media (max-width:768px) {
+    .nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      flex-direction: column;
+      padding: var(--space-4);
+      box-shadow: var(--shadow-lg);
+      border-radius: 0 0 var(--radius-lg) var(--radius-lg)
+    }
+
+    .nav.mobile-active {
+      display: flex
+    }
+
+    .mobile-menu-btn {
+      display: flex
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem
+    }
+
+    .hero-subtitle {
+      font-size: 1rem
+    }
+
+    .section-title {
+      font-size: 2rem
+    }
+
+    #contacto h2 {
+      font-size: 2rem;
+    }
+
+    .grid-cols-4 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-4)
+    }
+
+    .carousel-slide {
+      height: 350px
+    }
+
+    .carousel-nav {
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem
+    }
+
+    .container {
+      padding: 0 var(--space-4)
+    }
+  }
+
+  @media (max-width:480px) {
+    .grid-cols-4 {
+      grid-template-columns: 1fr
+    }
+
+    .hero-content h1 {
+      font-size: 2rem
+    }
+
+    .btn-large {
+      width: 100%;
+      margin-bottom: var(--space-2)
+    }
+
+    .flex.gap-4.justify-center {
+      flex-direction: column;
+      align-items: center
+    }
+
+    .carousel-slide {
+      height: 280px
+    }
+
+    .carousel-overlay {
+      padding: var(--space-4)
+    }
+
+    .carousel-overlay h3 {
+      font-size: 1.5rem
+    }
+
+    .contact-form-card,
+    .contact-info-card,
+    .contact-policy-card,
+    .contact-map-card {
+      padding: var(--space-6);
+    }
+  }
+</style>
