@@ -20,108 +20,72 @@
             <a href="galeria.html" class="nav-link active">Galería</a>
             <a href="contacto.html" class="nav-link">Contacto</a>
           </nav>
+          <button class="mobile-menu-btn">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
     </header>
+
     <!-- Galería Principal -->
     <section class="section">
       <div class="container">
-        <h2>Galería de Aventuras</h2>
-        <p>Mira las increíbles experiencias que vivirás en nuestros tours por Tingo María</p>
-        <!-- Carousel Principal -->
-        <div class="carousel-container">
-          <div class="carousel" id="mainCarousel">
-            <img src="https://images.unsplash.com/photo-1544552866-d3ed42536cfd?w=800&h=400&fit=crop" alt="Cueva de las Lechuzas">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop" alt="La Bella Durmiente">
-            <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=400&fit=crop" alt="Catarata Santa Carmen">
-            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800&h=400&fit=crop" alt="Safari Nocturno">
-            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=400&fit=crop" alt="Senderos amazónicos">
-            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=400&fit=crop" alt="Paisajes naturales">
-          </div>
-          <button class="carousel-nav carousel-prev" onclick="changeSlide(-1)">❮</button>
-          <button class="carousel-nav carousel-next" onclick="changeSlide(1)">❯</button>
-          <div class="carousel-indicators">
-            <span class="indicator active" onclick="currentSlide(1)"></span>
-            <span class="indicator" onclick="currentSlide(2)"></span>
-            <span class="indicator" onclick="currentSlide(3)"></span>
-            <span class="indicator" onclick="currentSlide(4)"></span>
-            <span class="indicator" onclick="currentSlide(5)"></span>
-            <span class="indicator" onclick="currentSlide(6)"></span>
-          </div>
+
+        <!-- Título y subtítulo modificados -->
+        <h2>Galería de Fotos</h2>
+        <p>Cada imagen cuenta una historia. Descubre la belleza natural de Tingo María a través de los ojos de quienes ya vivieron esta aventura.</p>
+
+        <!-- Grid de 30 fotos -->
+        <div class="gallery-grid-main">
+
+          <img src="https://images.unsplash.com/photo-1544552866-d3ed42536cfd?w=500&h=350&fit=crop" alt="Cueva de las Lechuzas" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=350&fit=crop" alt="La Bella Durmiente" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=500&h=350&fit=crop" alt="Catarata Santa Carmen" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=350&fit=crop" alt="Senderos amazónicos" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=500&h=350&fit=crop" alt="Safari nocturno" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500&h=350&fit=crop" alt="Paisajes naturales" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=500&h=350&fit=crop" alt="Bosque tropical" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&h=350&fit=crop" alt="Vista panorámica" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=500&h=350&fit=crop" alt="Río amazonico" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&h=350&fit=crop" alt="Selva densa" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?w=500&h=350&fit=crop" alt="Vegetación exuberante" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1464822759844-d150ad6c2d69?w=500&h=350&fit=crop" alt="Sendero de montaña" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=350&fit=crop" alt="Fauna silvestre" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?w=500&h=350&fit=crop" alt="Cascada entre rocas" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1520962922320-2038eebab146?w=500&h=350&fit=crop" alt="Pozas naturales" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=500&h=350&fit=crop" alt="Aves tropicales" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1551085254-e96b210db58a?w=500&h=350&fit=crop" alt="Mariposas de la selva" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1542224566-6e85f2e6772f?w=500&h=350&fit=crop" alt="Flores amazónicas" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=500&h=350&fit=crop" alt="Amanecer en la selva" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=500&h=350&fit=crop" alt="Cataratas imponentes" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=500&h=350&fit=crop" alt="Puesta de sol" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=500&h=350&fit=crop" alt="Flores silvestres" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&h=350&fit=crop" alt="Río cristalino" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500&h=350&fit=crop" alt="Laguna escondida" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&h=350&fit=crop" alt="Paisaje amazónico" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=500&h=350&fit=crop" alt="Niebla en las montañas" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1497449493050-aad1e7cad165?w=500&h=350&fit=crop" alt="Camino entre helechos" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1550236520-7050f3582da0?w=500&h=350&fit=crop" alt="Arboles gigantes" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=500&h=350&fit=crop" alt="Cielo estrellado" onclick="openModal(this.src, this.alt)">
+          <img src="https://images.unsplash.com/photo-1540206395-68808572332f?w=500&h=350&fit=crop" alt="Horizonte verde" onclick="openModal(this.src, this.alt)">
+
         </div>
-        <!-- Galerías por Destino -->
-        <div style="margin-top: 4rem;">
-          <h3 style="color: var(--primary); text-align: center; margin-bottom: 3rem; font-size: 1.8rem;">Explora por Destino</h3>
-          <!-- Cueva de las Lechuzas -->
-          <div class="gallery-section">
-            <h4>🦇 Cueva de las Lechuzas</h4>
-            <div class="gallery-grid">
-              <img src="https://images.unsplash.com/photo-1544552866-d3ed42536cfd?w=250&h=150&fit=crop" alt="Entrada cueva" onclick="openModal(this.src, 'Entrada misteriosa a la Cueva de las Lechuzas')">
-              <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=250&h=150&fit=crop" alt="Interior cueva" onclick="openModal(this.src, 'Interior iluminado con estalactitas')">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=250&h=150&fit=crop" alt="Guácharos" onclick="openModal(this.src, 'Observando los guácharos en su hábitat')">
-            </div>
-          </div>
-          <!-- La Bella Durmiente -->
-          <div class="gallery-section">
-            <h4>🏔️ La Bella Durmiente</h4>
-            <div class="gallery-grid">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=250&h=150&fit=crop" alt="Vista panorámica" onclick="openModal(this.src, 'Vista panorámica de La Bella Durmiente')">
-              <img src="https://images.unsplash.com/photo-1464822759844-d150ad6c2d69?w=250&h=150&fit=crop" alt="Sendero montaña" onclick="openModal(this.src, 'Sendero hacia la cima')">
-              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=250&h=150&fit=crop" alt="Atardecer" onclick="openModal(this.src, 'Atardecer dorado desde la montaña')">
-            </div>
-          </div>
-          <!-- Cataratas -->
-          <div class="gallery-section">
-            <h4>💧 Cataratas y Ríos</h4>
-            <div class="gallery-grid">
-              <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=250&h=150&fit=crop" alt="Catarata principal" onclick="openModal(this.src, 'Catarata de Santa Carmen')">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=250&h=150&fit=crop" alt="Pozas naturales" onclick="openModal(this.src, 'Pozas naturales refrescantes')">
-              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=250&h=150&fit=crop" alt="Vegetación" onclick="openModal(this.src, 'Vegetación exuberante')">
-            </div>
-          </div>
-          <!-- Vida Silvestre -->
-          <div class="gallery-section">
-            <h4>🦎 Vida Silvestre</h4>
-            <div class="gallery-grid">
-              <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=250&h=150&fit=crop" alt="Aves tropicales" onclick="openModal(this.src, 'Aves tropicales en su hábitat')">
-              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=250&h=150&fit=crop" alt="Mariposas" onclick="openModal(this.src, 'Mariposas amazónicas')">
-              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=250&h=150&fit=crop" alt="Flora" onclick="openModal(this.src, 'Flora amazónica exuberante')">
-            </div>
-          </div>
-        </div>
-        <!-- Testimonios -->
-        <div class="testimonials">
-          <h3>Lo que dicen nuestros visitantes</h3>
-          <div class="testimonial-grid">
-            <div class="testimonial">
-              <img src="https://images.unsplash.com/photo-1494790108755-2616c20e8c8a?w=80&h=80&fit=crop&crop=face" alt="María">
-              <p style="font-style: italic; margin-bottom: 10px;">"Una experiencia increíble. El guía conoce cada historia del lugar."</p>
-              <p style="font-weight: bold;">- María, España</p>
-            </div>
-            <div class="testimonial">
-              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Carlos">
-              <p style="font-style: italic; margin-bottom: 10px;">"Totalmente recomendado. Profesional y muy amable."</p>
-              <p style="font-weight: bold;">- Carlos, Lima</p>
-            </div>
-            <div class="testimonial">
-              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face" alt="Ana">
-              <p style="font-style: italic; margin-bottom: 10px;">"Los mejores recuerdos de nuestro viaje al Perú."</p>
-              <p style="font-weight: bold;">- Ana, Argentina</p>
-            </div>
-          </div>
-        </div>
+
         <div style="text-align: center; margin-top: 3rem;">
           <h3 style="color: var(--primary); margin-bottom: 1.5rem;">¿Listo para crear tus propios recuerdos?</h3>
-          <a href="contacto.html" class="btn" style="font-size: 1.1rem; padding: 1rem 2rem;">Reserva tu Tour</a>
+          <a href="contacto.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">Reserva tu Tour</a>
         </div>
+
       </div>
     </section>
+
     <!-- Modal -->
     <div id="imageModal" class="modal">
       <span class="close" onclick="closeModal()">&times;</span>
       <img id="modalImage">
       <div id="modalCaption" class="caption"></div>
     </div>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -130,10 +94,8 @@
             <h3>🌿 Tingo María Tours</h3>
             <p>Tu guía personal para descubrir la magia de la Amazonía peruana. Experiencias auténticas en el corazón de la selva.</p>
             <div style="margin-top: var(--space-4);">
-              <p><strong>📍 Ubicación:</strong>
-                Tingo María, Huánuco</p>
-              <p><strong>🕐 Horario:</strong>
-                24/7 disponible</p>
+              <p><strong>📍 Ubicación:</strong> Tingo María, Huánuco</p>
+              <p><strong>🕐 Horario:</strong> 24/7 disponible</p>
             </div>
           </div>
           <div class="footer-section">
@@ -179,125 +141,42 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
     <script>
-      let currentSlideIndex = 0;
-    const slides = document.querySelectorAll('#mainCarousel img');
-    const indicators = document.querySelectorAll('.indicator');
-    const totalSlides = slides.length;
+      function openModal(src, caption) {
+        document.getElementById('imageModal').style.display = 'block';
+        document.getElementById('modalImage').src = src;
+        document.getElementById('modalCaption').textContent = caption;
+        document.body.style.overflow = 'hidden';
+      }
+      function closeModal() {
+        document.getElementById('imageModal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+      document.getElementById('imageModal').addEventListener('click', function(e) { if (e.target === this) closeModal(); });
 
-    function changeSlide(direction) {
-      currentSlideIndex += direction;
-      if (currentSlideIndex >= totalSlides) currentSlideIndex = 0;
-      else if (currentSlideIndex < 0) currentSlideIndex = totalSlides - 1;
-      updateCarousel();
-    }
-
-    function currentSlide(n) {
-      currentSlideIndex = n - 1;
-      updateCarousel();
-    }
-
-    function updateCarousel() {
-      document.getElementById('mainCarousel').style.transform = `translateX(-${currentSlideIndex * 100}%)`;
-      indicators.forEach((indicator, index) => {
-        indicator.classList.toggle('active', index === currentSlideIndex);
-      });
-    }
-
-    function openModal(src, caption) {
-      document.getElementById('imageModal').style.display = 'block';
-      document.getElementById('modalImage').src = src;
-      document.getElementById('modalCaption').textContent = caption;
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal() {
-      document.getElementById('imageModal').style.display = 'none';
-      document.body.style.overflow = 'auto';
-    }
-
-    // Auto-play carousel
-    setInterval(() => changeSlide(1), 4000);
-
-    // Close modal with ESC
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeModal();
-    });
-
-    // Close modal clicking outside
-    document.getElementById('imageModal').addEventListener('click', function(e) {
-      if (e.target === this) closeModal();
-    });
-    </script>
-    <script>
       // Intersection Observer para animaciones
-          const observerOptions = {
-              threshold: 0.1,
-              rootMargin: '0px 0px -50px 0px'
-          };
-  
-          const observer = new IntersectionObserver((entries) => {
-              entries.forEach(entry => {
-                  if (entry.isIntersecting) {
-                      entry.target.classList.add('in-view');
-                  }
-              });
-          }, observerOptions);
-  
-          // Observar secciones
-          document.querySelectorAll('.section').forEach(section => {
-              observer.observe(section);
-          });
-  
-          // Header scroll effect
-          window.addEventListener('scroll', () => {
-              const header = document.querySelector('.header');
-              if (window.scrollY > 100) {
-                  header.classList.add('scrolled');
-              } else {
-                  header.classList.remove('scrolled');
-              }
-          });
-  
-          // Mobile menu toggle
-          const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-          const nav = document.querySelector('.nav');
-  
-          mobileMenuBtn.addEventListener('click', () => {
-              nav.classList.toggle('mobile-active');
-          });
-  
-  
-  
-          // Añadir efectos de carga progresiva
-          window.addEventListener('load', () => {
-              document.body.style.opacity = '1';
-          });
-  
-          // Efecto de partículas en el fondo (opcional)
-          function createFloatingElements() {
-              const container = document.querySelector('.section');
-              for (let i = 0; i < 5; i++) {
-                  const element = document.createElement('div');
-                  element.style.cssText = `
-                      position: absolute;
-                      width: ${Math.random() * 10 + 5}px;
-                      height: ${Math.random() * 10 + 5}px;
-                      background: rgba(76, 175, 80, 0.1);
-                      border-radius: 50%;
-                      top: ${Math.random() * 100}%;
-                      left: ${Math.random() * 100}%;
-                      animation: float ${Math.random() * 3 + 2}s ease-in-out infinite;
-                      pointer-events: none;
-                  `;
-                  if (container) container.appendChild(element);
-              }
-          }
-  
-          // Llamar la función cuando se carga la página
-          document.addEventListener('DOMContentLoaded', () => {
-              createFloatingElements();
-          });
+      const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('in-view'); });
+      }, observerOptions);
+      document.querySelectorAll('.section').forEach(section => observer.observe(section));
+
+      // Header scroll effect
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('.header');
+        if (window.scrollY > 100) header.classList.add('scrolled');
+        else header.classList.remove('scrolled');
+      });
+
+      // Mobile menu toggle
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const nav = document.querySelector('.nav');
+      if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', () => nav.classList.toggle('mobile-active'));
+
+      window.addEventListener('load', () => { document.body.style.opacity = '1'; });
     </script>
   </body>
 </html>
@@ -313,7 +192,6 @@
   --gray-800: #1F2937; --gray-900: #111827;
   --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-5: 1.25rem;
   --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem;
-  /* Actualizado a Inter y Poppins según tu HTML */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
   --font-display: 'Poppins', 'Inter', sans-serif;
   --shadow-sm: 0 1px 2px 0 rgba(0,0,0,.05); --shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
@@ -324,18 +202,15 @@
   --transition: all .3s cubic-bezier(.4,0,.2,1); --transition-fast: all .15s ease-in-out; --transition-slow: all .5s cubic-bezier(.4,0,.2,1);
 }
 
-/* ===== RESET Y BASE ===== */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;font-size:16px}
 body{font-family:var(--font-sans);line-height:1.6;color:var(--gray-700);background:linear-gradient(135deg,var(--mist-gray) 0%,var(--white) 100%);overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
 
-/* ===== TIPOGRAFÍA ===== */
 h1,h2,h3,h4,h5,h6{font-family:var(--font-display);font-weight:600;line-height:1.2;color:var(--gray-800);margin-bottom:var(--space-4)}
 h1{font-size:3.5rem;font-weight:700}h2{font-size:2.5rem}h3{font-size:1.875rem}h4{font-size:1.5rem}
 p{margin-bottom:var(--space-4);color:var(--gray-600)}
 
-/* Estilos específicos para la Galería */
-.section h2 { /* Título principal */
+.section h2 {
     font-size: 2.75rem;
     font-weight: 700;
     text-align: center;
@@ -345,62 +220,48 @@ p{margin-bottom:var(--space-4);color:var(--gray-600)}
     background-clip: text;
     margin-bottom: var(--space-4);
 }
-.section > .container > p:first-of-type { /* Subtítulo principal */
+.section > .container > p:first-of-type {
     text-align: center;
     font-size: 1.125rem;
     color: var(--gray-600);
-    margin-bottom: var(--space-12); /* 3rem + 1rem base */
+    margin-bottom: var(--space-12);
 }
 
-.gallery-section {
-    margin-top: var(--space-10); /* 2.5rem */
-    padding-bottom: var(--space-8);
-    border-bottom: 1px solid var(--gray-200);
-}
-.gallery-section:last-of-type {
-    border-bottom: none;
-}
-.gallery-section h4 {
-    color: var(--primary-dark);
-    margin-bottom: var(--space-6);
-    font-size: 1.5rem;
-    border-left: 5px solid var(--secondary);
-    padding-left: var(--space-3);
-}
-
-.gallery-grid {
+/* ===== GALLERY GRID PRINCIPAL - 30 fotos ===== */
+.gallery-grid-main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: var(--space-4);
+    margin-top: var(--space-4);
 }
-.gallery-grid img {
+.gallery-grid-main img {
     width: 100%;
-    height: 200px; /* Ajuste para un look más uniforme */
+    height: 220px;
     object-fit: cover;
-    border-radius: var(--radius);
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     cursor: pointer;
     transition: var(--transition-fast);
-    filter: brightness(0.9);
+    filter: brightness(0.92);
 }
-.gallery-grid img:hover {
-    transform: scale(1.02);
+.gallery-grid-main img:hover {
+    transform: scale(1.03);
     box-shadow: var(--shadow-xl);
-    filter: brightness(1.1);
+    filter: brightness(1.08);
     border: 3px solid var(--accent);
+    z-index: 1;
+    position: relative;
 }
 
-/* ===== MODAL (Lightbox) ===== */
+/* ===== MODAL ===== */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
-    z-index: 2000; /* High z-index to cover everything */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    z-index: 2000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.95); /* Black w/ opacity */
+    background-color: rgba(0,0,0,.95);
     backdrop-filter: blur(5px);
     padding-top: var(--space-10);
     animation: fadeIn .3s ease-out;
@@ -428,120 +289,26 @@ p{margin-bottom:var(--space-4);color:var(--gray-600)}
 }
 .modal .close {
     position: absolute;
-    top: var(--space-6);
-    right: var(--space-10);
+    top: var(--space-6); right: var(--space-10);
     color: var(--white);
     font-size: 3rem;
     font-weight: bold;
     transition: var(--transition-fast);
     cursor: pointer;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
 }
-.modal .close:hover,
-.modal .close:focus {
-    color: var(--secondary);
-    text-decoration: none;
-    cursor: pointer;
-    transform: rotate(90deg);
-}
+.modal .close:hover { color: var(--secondary); transform: rotate(90deg); }
 
-/* ===== TESTIMONIALS ===== */
-.testimonials {
-    margin-top: var(--space-20);
-    padding: var(--space-12) 0;
-    background: linear-gradient(135deg, var(--white) 0%, var(--gray-100) 100%);
-    border-radius: var(--radius-2xl);
-    box-shadow: var(--shadow-xl);
-    border: 1px solid var(--gray-200);
-}
-.testimonials h3 {
-    text-align: center;
-    color: var(--primary);
-    margin-bottom: var(--space-10);
-    position: relative;
-    font-size: 2rem;
-}
-.testimonials h3::after {
-    content: '🌟';
-    position: absolute;
-    right: -30px;
-    top: -10px;
-    font-size: 1.2rem;
-}
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-8);
-    padding: 0 var(--space-8);
-}
-.testimonial {
-    background: var(--white);
-    padding: var(--space-6);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-    text-align: center;
-    transition: var(--transition-fast);
-    border-top: 5px solid var(--secondary);
-}
-.testimonial:hover {
-    transform: translateY(-5px) scale(1.01);
-    box-shadow: var(--shadow-lg);
-}
-.testimonial img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: var(--space-4);
-    border: 3px solid var(--primary-light);
-    box-shadow: var(--shadow-sm);
-}
-.testimonial p {
-    font-style: italic;
-    margin-bottom: var(--space-3);
-    color: var(--gray-700);
-}
-.testimonial p:last-child {
-    font-weight: 600;
-    color: var(--gray-800);
-    margin-bottom: 0;
-}
-
-/* ===== CTA Final (Usamos un div para el contenedor centralizado) ===== */
-.cta-final {
-    text-align: center; 
-    margin-top: var(--space-12);
-}
-.cta-final h3 {
-    color: var(--primary); 
-    margin-bottom: var(--space-5);
-    font-size: 1.75rem;
-}
-.cta-final .btn {
-    font-size: 1.1rem; 
-    padding: var(--space-4) var(--space-8);
-    /* Aplicamos el estilo de botón primario automáticamente */
-    background: linear-gradient(135deg,var(--primary) 0%,var(--leaf-green) 100%);
-    color: var(--white);
-    box-shadow: var(--shadow-md);
-}
-
-/* ===== UTILIDADES (Mantenidas) ===== */
+/* ===== UTILIDADES ===== */
 .container{max-width:1200px;margin:0 auto;padding:0 var(--space-6)}
-.flex{display:flex;align-items:center}.justify-center{justify-content:center}
-.gap-4{gap:var(--space-4)}.gap-8{gap:var(--space-8)}
-.text-center{text-align:center}.text-sm{font-size:.875rem}
-.grid{display:grid;gap:var(--space-6)}.grid-cols-4{grid-template-columns:repeat(4,1fr)}
-.tours-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:var(--space-8);margin-top:var(--space-12)}
+.flex{display:flex;align-items:center}
 
 /* ===== HEADER ===== */
 .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.85);backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid rgba(255,255,255,.3);transition:var(--transition)}
 .header.scrolled{background:rgba(255,255,255,.98);box-shadow:var(--shadow-lg)}
 .header-content{display:flex;align-items:center;justify-content:space-between;padding:var(--space-4) 0}
-.logo{font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--primary);text-decoration:none;transition:var(--transition);position:relative}
+.logo{font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--primary);text-decoration:none;transition:var(--transition)}
 .logo:hover{color:var(--primary-light);transform:scale(1.05)}
-.logo::after{content:'✨';position:absolute;right:-25px;top:-5px;font-size:.8rem;opacity:0;transform:scale(0);transition:var(--transition)}
-.logo:hover::after{opacity:1;transform:scale(1) rotate(20deg)}
 .nav{display:flex;gap:var(--space-8)}
 .nav-link{font-weight:500;color:var(--gray-700);text-decoration:none;position:relative;transition:var(--transition);padding:var(--space-2) 0}
 .nav-link::after{content:'';position:absolute;bottom:0;left:50%;width:0;height:2px;background:linear-gradient(90deg,var(--primary),var(--secondary));transform:translateX(-50%);transition:var(--transition)}
@@ -550,48 +317,17 @@ p{margin-bottom:var(--space-4);color:var(--gray-600)}
 .mobile-menu-btn{display:none;flex-direction:column;background:none;border:none;cursor:pointer;padding:var(--space-2)}
 .mobile-menu-btn span{width:25px;height:3px;background:var(--gray-700);margin:3px 0;transition:var(--transition);border-radius:var(--radius-sm)}
 
-/* ===== BUTTONS (Mantenidos) ===== */
-.btn{display:inline-block;padding:var(--space-3) var(--space-6);border-radius:var(--radius-lg);text-decoration:none;font-weight:500;font-size:.95rem;text-align:center;border:none;cursor:pointer;transition:var(--transition);position:relative;overflow:hidden;transform-style:preserve-3d}
-.btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);transition:left .5s}
-.btn:hover::before{left:100%}
-.btn::after{content:'';position:absolute;top:50%;left:50%;width:0;height:0;border-radius:50%;background:rgba(255,255,255,.5);transform:translate(-50%,-50%);transition:width .6s,height .6s}
-.btn:active{transform:translateY(1px)}.btn:active::after{width:300px;height:300px}
+/* ===== BUTTONS ===== */
+.btn{display:inline-block;padding:var(--space-3) var(--space-6);border-radius:var(--radius-lg);text-decoration:none;font-weight:500;font-size:.95rem;text-align:center;border:none;cursor:pointer;transition:var(--transition);position:relative;overflow:hidden}
 .btn-primary{background:linear-gradient(135deg,var(--primary) 0%,var(--leaf-green) 100%);color:var(--white);box-shadow:var(--shadow-md)}
-.btn-primary:hover{background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary) 100%);transform:translateY(-2px);box-shadow:var(--shadow-xl);filter:brightness(1.1) saturate(1.2)}
-.btn-secondary{background:linear-gradient(135deg,var(--secondary) 0%,var(--accent) 100%);color:var(--white);box-shadow:var(--shadow-md)}
-.btn-secondary:hover{background:linear-gradient(135deg,var(--secondary-light) 0%,var(--accent-light) 100%);transform:translateY(-2px);box-shadow:var(--shadow-xl)}
-.btn-large{padding:var(--space-4) var(--space-8);font-size:1.1rem}
+.btn-primary:hover{background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary) 100%);transform:translateY(-2px);box-shadow:var(--shadow-xl)}
 .btn-small{padding:var(--space-2) var(--space-4);font-size:.875rem}
 
-/* ===== SECTIONS (Mantenidos) ===== */
-.section{padding:var(--space-20) 0;position:relative;opacity:0;transform:translateY(50px);transition:var(--transition-slow);background-attachment:fixed}
+/* ===== SECTIONS ===== */
+.section{padding:var(--space-20) 0;position:relative;opacity:0;transform:translateY(50px);transition:var(--transition-slow)}
 .section.in-view{opacity:1;transform:translateY(0)}
 .section:nth-child(even){background:linear-gradient(135deg,var(--gray-50) 0%,var(--white) 100%)}
-.section::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background-image:radial-gradient(circle at 20% 20%,rgba(76,175,80,.1) 1px,transparent 1px),radial-gradient(circle at 80% 80%,rgba(255,107,53,.1) 1px,transparent 1px);background-size:50px 50px,30px 30px;animation:float 20s ease-in-out infinite;pointer-events:none}
-
-/* ===== CAROUSEL (Mantenidos y adaptados) ===== */
-.carousel-container{position:relative;max-width:1000px;margin:0 auto;border-radius:var(--radius-2xl);overflow:hidden;box-shadow:var(--shadow-xl)}
-.carousel-container::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(45deg,rgba(255,255,255,.1) 25%,transparent 25%,transparent 75%,rgba(255,255,255,.1) 75%);background-size:20px 20px;pointer-events:none;opacity:0;transition:var(--transition)}
-.carousel-container:hover::before{opacity:1;animation:shimmer 2s linear infinite}
-.carousel{display:flex;transition:transform .5s cubic-bezier(.4,0,.2,1)}
-.carousel img { /* Estilo directo a la imagen dentro del carrusel */
-    min-width: 100%;
-    position: relative;
-    height: 500px;
-    object-fit: cover;
-    will-change: transform;
-    transition: var(--transition-slow);
-}
-.carousel-slide:hover img{transform:scale(1.05)} /* Se mantiene por si se usa la clase slide */
-.carousel-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.8));color:var(--white);padding:var(--space-8);text-align:center}
-.carousel-overlay h3{font-size:2rem;margin-bottom:var(--space-2);color:var(--white)}
-.carousel-overlay p{font-size:1.1rem;color:rgba(255,255,255,.9);margin:0}
-.carousel-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.9);border:none;width:50px;height:50px;border-radius:50%;font-size:1.5rem;color:var(--primary);cursor:pointer;transition:var(--transition);backdrop-filter:blur(10px);box-shadow:var(--shadow-lg)}
-.carousel-nav:hover{background:var(--white);transform:translateY(-50%) scale(1.1);box-shadow:var(--shadow-xl)}
-.carousel-prev{left:var(--space-4)}.carousel-next{right:var(--space-4)}
-.carousel-indicators{position:absolute;bottom:var(--space-4);left:50%;transform:translateX(-50%);display:flex;gap:var(--space-2)}
-.indicator{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,.5);cursor:pointer;transition:var(--transition);-webkit-tap-highlight-color:transparent}
-.indicator.active{background:var(--white);transform:scale(1.2);box-shadow:0 0 0 2px var(--primary)}
+.section::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background-image:radial-gradient(circle at 20% 20%,rgba(76,175,80,.1) 1px,transparent 1px),radial-gradient(circle at 80% 80%,rgba(255,107,53,.1) 1px,transparent 1px);background-size:50px 50px,30px 30px;pointer-events:none}
 
 /* ===== FOOTER (Mantenidos) ===== */
 .footer{background:linear-gradient(135deg,var(--forest-green) 0%,var(--gray-800) 100%);color:var(--white);padding:var(--space-16) 0 var(--space-8);position:relative}
@@ -610,50 +346,28 @@ p{margin-bottom:var(--space-4);color:var(--gray-600)}
 .btn:nth-child(3):hover {background: rgba(234, 67, 53, 0.2);border-color: #EA4335;box-shadow:0 8px 25px rgba(0, 0, 0, 0.3),0 0 20px rgba(234, 67, 53, 0.3); color: #EA4335;}
 .footer-bottom p {text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);}
 
-/* ===== ANIMACIONES (Mantenidos) ===== */
-@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-@keyframes glow{0%,100%{box-shadow:0 0 20px rgba(45,125,50,.3)}50%{box-shadow:0 0 40px rgba(45,125,50,.6)}}
-@keyframes shimmer{0%{transform:translateX(-100%) translateY(-100%) rotate(45deg);opacity:0}50%{opacity:1}100%{transform:translateX(100%) translateY(100%) rotate(45deg);opacity:0}}
-@keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
-@keyframes loading{0%{left:-100%}100%{left:100%}}
-@keyframes pageEnter{to{opacity:1;transform:translateY(0)}}
+/* ===== ANIMACIONES ===== */
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes zoomIn{from{transform:scale(0.8)}to{transform:scale(1)}}
-
-/* ===== ESTADOS Y EFECTOS (Mantenidos) ===== */
-::selection{background:var(--primary-light);color:var(--white)}::-moz-selection{background:var(--primary-light);color:var(--white)}
-.nav-link:focus,.btn:focus{outline:2px solid var(--accent);outline-offset:2px}
-body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--secondary),var(--accent));z-index:9999;transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
-a,button,.card,.indicator{-webkit-tap-highlight-color:transparent}
-img{transition:opacity .3s ease}img.loading{opacity:.5;filter:blur(2px)}
-
-/* ===== SCROLLBAR (Mantenidos) ===== */
+::selection{background:var(--primary-light);color:var(--white)}
 ::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:var(--gray-100)}
 ::-webkit-scrollbar-thumb{background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%);border-radius:var(--radius-xl)}
-::-webkit-scrollbar-thumb:hover{background:linear-gradient(135deg,var(--primary-dark) 0%,var(--secondary) 100%)}
 
-/* ===== RESPONSIVE (Mantenidos y adaptados) ===== */
+/* ===== RESPONSIVE ===== */
 @media (max-width:1024px){
-.gallery-grid{grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));} /* Ajuste en tablet */
-.testimonial-grid{grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
-.footer-content{grid-template-columns:1fr;gap:var(--space-8);text-align:center}
-.carousel img {height: 400px;}
+  .footer-content{grid-template-columns:1fr;gap:var(--space-8);text-align:center}
+  .gallery-grid-main{grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));}
 }
 @media (max-width:768px){
-.nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;padding:var(--space-4);box-shadow:var(--shadow-lg);border-radius:0 0 var(--radius-lg) var(--radius-lg)}
-.nav.mobile-active{display:flex}.mobile-menu-btn{display:flex}
-.section h2{font-size:2rem}
-.section > .container > p:first-of-type{margin-bottom: var(--space-8);}
-.gallery-grid{grid-template-columns: 1fr 1fr; gap: var(--space-3);} /* 2 columnas en móvil */
-.carousel img {height: 300px;}
-.carousel-nav{width:40px;height:40px;font-size:1.2rem}
-.container{padding:0 var(--space-4)}
+  .nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;padding:var(--space-4);box-shadow:var(--shadow-lg);border-radius:0 0 var(--radius-lg) var(--radius-lg)}
+  .nav.mobile-active{display:flex}.mobile-menu-btn{display:flex}
+  .section h2{font-size:2rem}
+  .gallery-grid-main{grid-template-columns:repeat(2, 1fr); gap: var(--space-3);}
+  .gallery-grid-main img{height:180px;}
+  .container{padding:0 var(--space-4)}
 }
 @media (max-width:480px){
-.gallery-grid{grid-template-columns: 1fr;} /* 1 columna en móvil pequeño */
-.carousel img {height: 250px;}
-.cta-final .btn{width: 100%;}
-.testimonial-grid{grid-template-columns: 1fr;}
+  .gallery-grid-main{grid-template-columns:1fr;}
+  .gallery-grid-main img{height:220px;}
 }
 </style>
